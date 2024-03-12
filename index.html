@@ -10,7 +10,18 @@
 
 <!-- ♣♦♥♠ -->
 <body>
-    <my-card></my-card>
+    <script>
+    for(let j=0;j<4;j++){
+        for(let i=2;i<15;i++){
+            let card= document.createElement('my-card')
+            card.dataset.value=i
+            card.dataset.sign=j
+            document.getElementsByTagName("body")[0].appendChild(card)
+        }
+    }
+
+    </script>
+    <!-- <my-card data-value="18" data-sign="3"></my-card> -->
     <!-- <div class="card">
         <div class="value">
             <div class="number">A</div>
